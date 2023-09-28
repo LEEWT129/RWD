@@ -1,0 +1,56 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 30px 0 30px;
+}
+
+body div {
+    height: 100px;
+    margin-bottom:10px;
+    flex: 0 0 calc(100%);
+    /* flex: 0 0 300px; */
+
+}
+
+.div1 {
+    background-color: aquamarine;
+}
+
+.div2 {
+    background-color: chocolate;
+}
+
+.div3 {
+    background-color: cornflowerblue;
+}
+
+.div4 {
+    background-color: darkkhaki;
+}
+
+.div5 {
+    background-color: darkslategrey;
+}
+.div6 {
+    background-color: rgb(111, 223, 116);
+}
+
+
+/* 螢幕大於600px時 */
+@media only screen and (min-width: 600px) {
+    body div {
+        flex: 0 0 calc(50%);
+    }
+}
+
+/* 螢幕大於768px時 */
+@media only screen and (min-width: 768px) {
+    body div {
+        flex: 0 0 calc(33.33%);
+    }
+}
+
+
